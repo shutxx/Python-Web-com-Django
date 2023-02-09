@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .center, h1 {
+            text-align: center;
+        }
+        
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Geek university</h1>
+    <br><br>
+    <div class="center">
+        <button onclick="somar();">Click para somar</button>
+        <button onclick="subtrair();">Click para somar</button>
+        <p id="p1">0</p>
+        <br>
+        <button class="center" onclick="mudar_texto();">Mudar texto</button>
+    </div>
+
+    
+    <script>
+        var nome;
+            nome = prompt("Qual seu nome? ")
+            alert("Olá " + nome)
+
+        function mudar_texto(){
+            var h1 = document.getElementsByTagName("h1");
+            h1[0].innerText = "Evolua seu lado geek"
+        }
+
+        function somar(){
+            var p1 = document.getElementById("p1");
+            p1.innerText = parseInt(p1.innerText) + 1;
+        }
+        function subtrair(){
+            var p1 = document.getElementById("p1");
+            p1.innerText = parseInt(p1.innerText) - 1;
+        }
+        
+    </script>
+</body>
+</html>
